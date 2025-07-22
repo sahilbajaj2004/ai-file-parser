@@ -51,6 +51,7 @@ export function FileUpload({
   const onDrop = React.useCallback(
     (acceptedFiles: File[], rejectedFiles: any[]) => {
       setError(null);
+      
 
       if (rejectedFiles.length > 0) {
         const errorMessages = rejectedFiles.map((file) => {
